@@ -1,0 +1,192 @@
+/* css variables */
+
+:root {
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-medium-cyan: hsl(184, 100%, 22%);
+  --primary-dark-cyan: hsl(179, 100%, 13%);
+
+  /* for paragraphs */
+  --neutral-white: hsla(0, 0%, 100%, 0.75);
+  /* for background,headings,buttons */
+  --neutral-light-grey: hsl(0, 0%, 95%);
+
+  /* font-primary-Lexend deca-400*/
+  --primary-ff: "Lexend Deca", sans-serif;
+
+  /* font-secondary-Big Shoulders Display-700*/
+  --secondary-ff: "Big Shoulders Display", cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: var(--primary-ff);
+  display: grid;
+}
+
+/* Latout */
+
+.main {
+  margin: auto;
+  max-width: 144rem;
+  display: flex;
+}
+
+.section-sedan {
+  background-color: var(--primary-orange);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.section-suv {
+  background-color: var(--primary-medium-cyan);
+}
+
+.section-luxary {
+  background-color: var(--primary-dark-cyan);
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.main-section {
+  max-width: 35rem;
+  padding-left: 5rem;
+  padding-right: 7rem;
+}
+
+/* Typography */
+
+.svg {
+  padding: 4.5rem 0 2.5rem 0;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  font-family: var(--secondary-ff);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 3.5rem;
+  color: var(--neutral-light-grey);
+}
+.text {
+  font-size: 1.65rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  padding-bottom: 7rem;
+  color: var(--neutral-white);
+}
+
+.link {
+  display: block;
+  width: 15rem;
+  margin: 5rem 0;
+  border: none;
+  text-decoration: none;
+  color: var(--neutral-light-grey);
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+  border: 1px solid var(--neutral-white);
+  text-align: center;
+  border-radius: 25px;
+}
+
+.link:hover {
+  background-color: var(--neutral-light-grey);
+}
+.sedan-link:hover {
+  color: var(--primary-orange);
+}
+.suv-link:hover {
+  color: var(--primary-medium-cyan);
+}
+.luxary-link:hover {
+  color: var(--primary-dark-cyan);
+}
+
+/* footer-attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media-Queries */
+@media screen and (max-width: 900px) {
+  .main {
+    margin: auto;
+    margin: auto 3rem;
+  }
+
+  .heading-1 {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1.35rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-section {
+    max-width: 35rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-section {
+    max-width: 35rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+  .text {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3rem 0;
+  }
+
+  .section-sedan {
+    background-color: var(--primary-orange);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    border-bottom-left-radius: 0;
+  }
+
+  .section-suv {
+    background-color: var(--primary-medium-cyan);
+  }
+
+  .section-luxary {
+    background-color: var(--primary-dark-cyan);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+  }
+
+  .heading-1 {
+    font-size: 3.5rem;
+  }
+  .text {
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+  }
+}
