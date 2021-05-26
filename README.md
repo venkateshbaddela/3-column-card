@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-deesign]((https://user-images.githubusercontent.com/84497133/119615490-13c5ef00-be1d-11eb-8d17-45cff2593305.png)
+![Desktop-deesign](https://user-images.githubusercontent.com/84497133/119615490-13c5ef00-be1d-11eb-8d17-45cff2593305.png)
 
 
 ### Links
